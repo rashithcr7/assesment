@@ -1,0 +1,27 @@
+header{
+    .navbar{
+        width: 100%;
+        ul{
+            width: 100%;
+            list-style: none;
+            margin: unset;
+            display:flex;
+            align-items: center;
+            padding-left: unset;
+            li{
+                &:nth-child(4){
+                    margin-left: auto;
+                }
+                a{
+                    font-size: 14px;
+                    display: block;
+                    padding:10px 15px;
+                    color: #b3b9d5;
+                    &.Sbtn{
+                        color: #515360;
+                    }
+                }
+            }
+        }
+    }
+}

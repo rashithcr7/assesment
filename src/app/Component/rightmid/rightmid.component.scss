@@ -1,0 +1,44 @@
+@import "../../../assets/sass/utilities/flex";
+
+.rightMid {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 30px;
+  @media (max-width:500px) {
+    padding: 20px;
+  }
+  .bigHead {
+    font-size: 40px;
+    color: #515360;
+    text-transform: capitalize;
+  }
+
+  p {
+    color: #919094;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  input {
+    box-shadow: inset 0 0 11px #e4eaed;
+    outline: none;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+
+  button {
+    &.btnPrimary {
+      padding: 8px 10px;
+        font-size: 14px;
+      color: #fff;
+      background-color: #8776fb;
+      outline: unset;
+      border-radius: 8px;
+      outline: none;
+      border: none;
+    }
+  }
+}

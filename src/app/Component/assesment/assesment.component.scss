@@ -1,0 +1,111 @@
+section {
+  background-color: #fff;
+  overflow: hidden;
+  &.sectionMain {
+    display: flex;
+    height: 100vh;
+    padding: 10px;
+    position: relative;
+
+    .animation1 {
+      z-index: 0;
+      position: absolute;
+      height: 300px;
+      width: 300px;
+      right: 1;
+      right: 10px;
+      bottom: 10px;
+      animation: zoominout 7s linear infinite;
+      filter: drop-shadow(0 1px 6px rgb(0 0 0 / 12%));
+      // box-shadow: 0 1px 6px rgb(0 0 0 / 12%);
+    }
+
+    @media (max-width: 786px) {
+      height: 100%;
+      flex-direction: column-reverse;
+
+      .secLeft {
+        width: 100%;
+      }
+
+      .secRight {
+        width: 100%;
+      }
+    }
+
+    .secLeft {
+      z-index: 1;
+
+      width: 30%;
+      padding: 10px;
+      background: #ee9ca7;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to top, #ffdde1, #ee9ca7);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to top, #ffdde1, #ee9ca7);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+      //       background: #FFEFBA;  /* fallback for old browsers */
+      // background: -webkit-linear-gradient(to top, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+      // background: linear-gradient(to top, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+      // background: #D3CCE3;  /* fallback for old browsers */
+      // background: -webkit-linear-gradient(to top, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+      // background: linear-gradient(to top, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+      border-radius: 5px;
+    }
+
+    .secRight {
+      width: 70%;
+      padding-left: 40px;
+      z-index: 1;
+
+    }
+
+    @media (max-width:768px) {
+      .secLeft {
+        width: 100%;
+        padding: 5px;
+      }
+
+      .secRight {
+        width: 100%;
+        padding: 5px;
+      }
+    }
+  }
+
+}
+
+// https://github.com/rashithcr7/assesment.git
+@keyframes zoominout {
+
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+
+  25% {
+    -webkit-transform: translate(9%);
+    transform: translate(9%);
+  }
+
+  50% {
+    -webkit-transform: translate(9%);
+    transform: translate(9%);
+  }
+
+  75% {
+    -webkit-transform: translate(9%);
+    transform: translate(9%);
+  }
+
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}

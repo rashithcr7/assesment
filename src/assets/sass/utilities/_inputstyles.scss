@@ -1,0 +1,151 @@
+.form-group {
+    position: relative;
+  }
+  
+  .form-control,
+  .custom-file-label {
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #858484 !important;
+    border-radius: 0 !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+  }
+  
+  .form-control:focus {
+    border: none !important;
+    border-bottom: 1px solid #00888c !important;
+    box-shadow: 0px 2px 0px -1px #00888c !important;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s !important;
+  }
+  
+  .form-control + label {
+    color: #858484;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: all 0.5s;
+  }
+  
+  .form-control:focus + label,
+  .form-control.has-value + label {
+    top: -15px;
+    left: 0px;
+    transform: scale(0.8);
+    transform-origin: top left;
+  }
+  
+  label {
+    color: #858484;
+  }
+  
+  .form-control:focus + label {
+    color: #00888c;
+  }
+  
+  .custom-control-label::before {
+    position: absolute;
+    top: 0.25rem;
+    left: -1.5rem;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none;
+    content: "";
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+  
+  .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before,
+  .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+    color: #fff;
+    background-color: #00888c;
+  }
+  
+  .custom-file-label {
+    margin-top: 0;
+    color: #858484;
+  }
+  
+  .custom-file-label::after {
+    border: none;
+    border-radius: 0px;
+    background: #858484;
+    top: 1px;
+    color: #fff;
+  }
+  
+  
+  .form-control:focus {
+    border: none;
+    border-bottom: 1px solid #00888c;
+    box-shadow: 0px 2px 0px -1px #00888c;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s;
+  }
+  
+  .form-control + label {
+    color: #858484;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: all 0.5s;
+  }
+  
+  .form-control:focus + label,
+  .form-control.has-value + label {
+    top: -15px;
+    left: 0px;
+    transform: scale(0.8);
+    transform-origin: top left;
+  }
+  
+  label {
+    color: #858484;
+  }
+  
+  .form-control:focus + label {
+    color: #00888c;
+  }
+  
+  .custom-control-label::before {
+    position: absolute;
+    top: 0.25rem;
+    left: -1.5rem;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none;
+    content: "";
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+  
+  .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before,
+  .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+    color: #fff;
+    background-color: #00888c;
+  }
+  
+  .custom-file-label {
+    margin-top: 0;
+    color: #858484;
+  }
+  
+  .custom-file-label::after {
+    border: none;
+    border-radius: 0px;
+    background: #858484;
+    top: 1px;
+    color: #fff;
+  }
+  
+ 
