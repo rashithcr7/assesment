@@ -1,5 +1,6 @@
 <header>
-    <nav class="navbar">
+    <nav class="navbar" [ngClass]="status ? 'Close' : 'Open' ">
+        <i class="ri-close-circle-line " (click)="clickNav()" ></i>
         <ul>
             <li>
                 <a class="">Overview</a>
@@ -18,9 +19,13 @@
             </li>
         </ul>
     </nav>
-    <!-- <nav class="mobilenav">
-        <div>
+    <nav class="mobilenav">
+        <div class="d-flex align-items-center justify-content-between">
             <h6>Navbar</h6>
+            <button class="menu" (click)="clickNav()">
+                <i class="ri-menu-3-line"></i>
+
+            </button>
         </div>
-    </nav> -->
+    </nav>
 </header>

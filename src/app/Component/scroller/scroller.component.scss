@@ -2,11 +2,54 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  .mobileMok {
-    border-radius: 10px;
 
+  @media(max-width:786px) {
+    height: 300px;
+  }
+
+  .swiper-slide[data-swiper-slide-index="1"] {
+    
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #ffdde1, #ee9ca7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+
+  .swiper-slide[data-swiper-slide-index="2"] {
+   
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #b91d73, #f953c6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #b91d73, #f953c6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+
+  .swiper-slide[data-swiper-slide-index="0"] {
+    background: #36D1DC;  /* fallback for old browsers */ 
+    background: -webkit-linear-gradient(to bottom, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+  }
+
+  .mobileMok {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    // margin: 40px;
+    @media (max-width:786px) {
+      margin: 0px;
+      padding: 20px;
+    }
     img {
-      object-fit: cover;
+      border-radius: 20px;
+      // object-fit: cover;
       max-width: 100%;
       height: 100%;
     }
